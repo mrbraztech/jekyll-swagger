@@ -1,0 +1,20 @@
+{% include shared_variables.html %}
+
+{% assign navigation = site.data.navigation %}
+
+<nav class="navbar navbar-dark sticky-top bg-primary">
+  <a class="navbar-brand" href="/">
+    <img src="{{navigation.brand}}" width="30" height="30"
+      class="d-inline-block align-top" alt="">
+      {{navigation.title}}
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      {% for item in navigation.header %}
+      <li class="nav-item {% if item.url == page.url %}active{% endif %}">
+        <a class="nav-link" href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+  </div>
+</nav>
