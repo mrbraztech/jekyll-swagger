@@ -2,8 +2,8 @@ title:             Jekyll Swagger Portal
 email:             anderson.braz@gmail.com
 description:       A quick start project for building swagger documentation in a form of API Portal
 author:            Mr. Braz
-baseurl:           "/"
-url:               ""
+baseurl:           "/jekyll-swagger/"
+url:               "https://mrbraztech.github.io/"
 
 # Build settings
 markdown:          kramdown
